@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Судоку</title>
+    <link rel="stylesheet" href="sudoku.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Судоку</h1>
+
+      <div class="level-selector">
+        <h2>Оберіть рівень:</h2>
+        <button class="level-btn" data-level="easy">Легкий</button>
+        <button class="level-btn" data-level="medium">Середній</button>
+        <button class="level-btn" data-level="hard">Важкий</button>
+      </div>
+
+      <div class="game-container" style="display: none">
+        <div class="controls">
+          <button id="newGame">Нова гра</button>
+          <button id="checkSolution">Перевірити</button>
+          <button id="solve">Розв'язати</button>
+        </div>
+
+        <div class="sudoku-grid" id="sudokuGrid"></div>
+
+        <div class="message" id="message"></div>
+      </div>
+    </div>
+
+    <script src="sudoku.js"></script>
+  </body>
+</html>
